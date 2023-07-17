@@ -1,0 +1,111 @@
+.hero {
+    display: flex;
+    height: 500px;
+    background-color:rgba(219, 240, 250, 0.363);
+    flex-wrap: wrap;
+    padding-bottom:50px;
+position: relative;
+
+  }
+  
+  .hero-content {
+    flex: 1;
+    display: flex;
+    margin-left: 10%;
+  }
+  
+  #title{
+    font-size: 3rem;
+    font-weight: bolder;
+
+  }
+  .text-container {
+    color:rgba(0, 0, 0, 0.808);
+    font-family: "Arial", sans-serif; 
+ }
+  
+  .text-container h1 {
+    margin-bottom: 1rem;
+
+
+  }
+  
+  .text-container p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #0dabd3;
+    color: #FFFF;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero-image {
+    display: block;
+    flex:1;
+    background-image: url('../../assets/doctor.png');
+    /* background-size:cover; */
+    background-position: center;
+    object-fit:contain;
+    background-repeat: no-repeat;
+    padding-bottom: 400px;
+
+
+}
+
+.group{
+    display: flex;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      flex-direction: column-reverse;
+      height: auto;
+    }
+ 
+   
+    .hero-image {
+        /* flex: 1; */
+        height: 543px;
+
+        background-image: url(/src/assets/doctor.png);
+        /* background-size: cover; */
+        background-position: center;
+        object-fit: contain;
+        background-repeat: no-repeat;
+    }
+
+
+
+
+   #title{
+    font-size:30px;
+   }
+  
+    .hero-content {
+      padding: 2rem;
+    }
+  
+  
+    .text-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .text-container p {
+      font-size: 1.2rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+    }
+  }
